@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+<p>
+  <b>Company:</b>
+  <%= @user.company %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>Member since <%= @user.created_at.to_s(:long) %></p>
+

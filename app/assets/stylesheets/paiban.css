@@ -1,0 +1,48 @@
+body { 
+  margin: 0;	
+  padding: 0;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background: #fff url(logo/h-grad.png) repeat-x;
+  height: 180px;
+  margin-top: 10px;
+  text-align: left;
+  padding-top: 1px;
+}
+
+#container {
+  width: 760px;
+  min-width: 760px;	
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#sidemenu {
+  font-size: 80%;
+  float: left;
+  width: 100px;
+  padding: 0;
+}
+
+#sidemenu ul {
+  list-style: none; 
+  margin-left: 0px;
+  padding: 0;
+}
+
+a { color: #b00; }
+a:hover { background-color: #b00; color: #eee; }
+
+#content { float: right; width: 650px; }
+
+th { background-color: #933; color: #fff; }
+tr.odd { background-color: #fcc; }
+tr.even { background-color: #ecc; }
+
+/* User table styling */
+table#users { width: 100%;}
+table#users th { font-size: 95%; }
+table#users td { font-size: 90%; }

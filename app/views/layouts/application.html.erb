@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>拍板...空谈误国，实干兴邦！</title>
+	<%= stylesheet_link_tag "application" %>
+	<%= stylesheet_link_tag 'paiban' %>
+	<%= javascript_include_tag :defaults %>
+	<%= csrf_meta_tags %>
+	<%= yield :head %>
+</head>
+<body>
+	<div id="container">
+	  <div id="header">
+	  	<h1>上拍板网，做自己人生的导演！</h1>
+	    <%= image_tag 'logo/paiban_logo_green_3D.jpg', :alt => "Paiban" %>
+	  </div>
+	  <div id="sidemenu">
+	    <%= render :partial => 'layouts/menu' %>
+	  </div>
+	  <div id="content">
+	    <% if flash[:notice] -%>
+	      <div id="notice"><%= flash[:notice] %></div>
+	    <% end -%>
+	    <% if flash[:error] -%>
+	      <div id="error"><%= flash[:error] %></div>
+	    <% end -%>
+	    <%= yield %>
+	  </div>
+	</div>
+</body>
+</html>

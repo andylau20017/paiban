@@ -1,0 +1,13 @@
+<% if flash[:alert] %>
+	<%= flash[:alert] %>
+<% end %>
+
+<%= form_tag do %>
+<div class="field">
+用户名: <%= text_field_tag :username, params[:username] %>
+</div>
+<div class="field">
+密码: <%= password_field_tag :password, params[:password] %>
+</div>
+<%= submit_tag "登录" %>
+<% end %>
